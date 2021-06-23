@@ -19,25 +19,60 @@ import deepOrange from "@material-ui/core/colors/deepOrange";
 import brown from "@material-ui/core/colors/brown";
 import grey from "@material-ui/core/colors/grey";
 import blueGrey from "@material-ui/core/colors/blueGrey";
+import "../styles/carbon-components.css"
+import '../Fonts/stylesheet.css'
 
 const theme = createMuiTheme({
   palette: {
-    primary: { main: indigo[500] }, 
+    primary: { main: "#CA0018" }, 
     secondary: { main: teal[100]}, 
   },
-  typography: { useNextVariants: true },
+  typography: { 
+    fontFamily: [ 'J&J CircularTT Black Italic Web', 'J&J CircularTT Bold Web', 'J&J CircularTT Bold Italic Web', 'J&J CircularTT Book Web', 'J&J CircularTT Book Italic Web', 'J&J CircularTT Light Web', 'J&J CircularTT Light Italic Web', 'J&J CircularTT Medium Web', 'J&J CircularTT Medium Italic Web', 'J&J CircularTT Black Web' ].join(','),
+    color: "#212121",
+    h1: {
+      fontFamily: 'J&J CircularTT Black Web',
+      fontSize: 60
+    }
+  },
+  shape: {
+    borderRadius: 0
+  },
+  overrides: {
+    MuiTypography: {
+      h1: {
+        fontFamily: 'J&J CircularTT Black Web'
+      }
+    },
+    MuiButton: {
+      root: {
+        border: {
+          color: "#CA0018"
+        },
+        color: "#CA0018",
+        outlined: "#CA0018"
+      }
+    }
+  }
 });
 
 export default function UXPinWrapper({ children }) {
-  let icons = document.createElement('link');
-  icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
-  icons.setAttribute('rel', 'stylesheet');
-  document.head.appendChild(icons);
+  // let icons = document.createElement('link');
+  // icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+  // icons.setAttribute('rel', 'stylesheet');
+  // document.head.appendChild(icons);
 
-  let roboto = document.createElement('link');
-  roboto.setAttribute('href', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500');
-  roboto.setAttribute('rel', 'stylesheet');
-  document.head.appendChild(roboto);
+  // let roboto = document.createElement('link');
+  // roboto.setAttribute('href', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+  // roboto.setAttribute('rel', 'stylesheet');
+  // document.head.appendChild(roboto);
+
+  // let styles = document.createElement('link');
+  // styles.setAttribute('href', 'https://unpkg.com/carbon-components/css/carbon-components.min.css');
+  // styles.setAttribute('rel', 'stylesheet');
+  // document.head.appendChild(styles);
 
   return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
 }
+
+// fontFamily: [ 'J&J CircularTT Black Italic Web', 'J&J CircularTT Bold Web', 'J&J CircularTT Bold Italic Web', 'J&J CircularTT Book Web', 'J&J CircularTT Book Italic Web', 'J&J CircularTT Light Web', 'J&J CircularTT Light Italic Web', 'J&J CircularTT Medium Web', 'J&J CircularTT Medium Italic Web', 'J&J CircularTT Black Web' ].join(',')

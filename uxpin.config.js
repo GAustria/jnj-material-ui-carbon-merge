@@ -1,15 +1,15 @@
 module.exports = {
   components: {
     categories: [
-      {
-        name: "Layout",
-        include: [
-          "src/Grid/Grid.js",
-          "src/GridList/GridList.js",
-          "src/GridListTile/GridListTile.js",
-          "src/GridListTileBar/GridListTileBar.js"
-        ]
-      },
+      // {
+      //   name: "Layout",
+      //   include: [
+      //     "src/Grid/Grid.js",
+      //     "src/GridList/GridList.js",
+      //     "src/GridListTile/GridListTile.js",
+      //     "src/GridListTileBar/GridListTileBar.js"
+      //   ]
+      // },
       {
         name: "General",
         include: [
@@ -83,18 +83,18 @@ module.exports = {
           "src/Chip/Chip.js"
         ]
       },
-      {
-        name: "List",
-        include: [
-          "src/List/List.js",
-          "src/ListItem/ListItem.js",
-          "src/ListItemAvatar/ListItemAvatar.js",
-          "src/ListItemIcon/ListItemIcon.js",
-          "src/ListItemSecondaryAction/ListItemSecondaryAction.js",
-          "src/ListItemText/ListItemText.js",
-          "src/ListSubheader/ListSubheader.js"
-        ]
-      },
+      // {
+      //   name: "List",
+      //   include: [
+      //     "src/List/List.js",
+      //     "src/ListItem/ListItem.js",
+      //     "src/ListItemAvatar/ListItemAvatar.js",
+      //     "src/ListItemIcon/ListItemIcon.js",
+      //     "src/ListItemSecondaryAction/ListItemSecondaryAction.js",
+      //     "src/ListItemText/ListItemText.js",
+      //     "src/ListSubheader/ListSubheader.js"
+      //   ]
+      // },
       {
         name: "Progress",
         include: [
@@ -107,6 +107,13 @@ module.exports = {
         include: [
           "src/Image/Image.js",
           "src/CssBaseline/CssBaseline.js"
+        ]
+      },
+      {
+        name: "New",
+        include: [
+          "src/FileUpload/FileUpload.js",
+          "src/ButtonC/ButtonC.js"
         ]
       }
     ],
