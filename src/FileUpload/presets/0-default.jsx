@@ -3,7 +3,7 @@ import FileUploader from "../FileUpload";
 
 export default (
     <FileUploader
-        className="bob"
+        className="Upload"
         labelText="Add files"
         buttonLabel="Upload Files"
         buttonKind="primary"

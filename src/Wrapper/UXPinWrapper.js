@@ -25,14 +25,25 @@ import '../Fonts/stylesheet.css'
 const theme = createMuiTheme({
   palette: {
     primary: { main: "#CA0018" }, 
-    secondary: { main: teal[100]}, 
+    secondary: { main: "#FFFFFF"}, 
   },
   typography: { 
     fontFamily: [ 'J&J CircularTT Black Italic Web', 'J&J CircularTT Bold Web', 'J&J CircularTT Bold Italic Web', 'J&J CircularTT Book Web', 'J&J CircularTT Book Italic Web', 'J&J CircularTT Light Web', 'J&J CircularTT Light Italic Web', 'J&J CircularTT Medium Web', 'J&J CircularTT Medium Italic Web', 'J&J CircularTT Black Web' ].join(','),
     color: "#212121",
     h1: {
       fontFamily: 'J&J CircularTT Black Web',
-      fontSize: 60
+      fontSize: 60,
+      color: "#212121"
+    },
+    h2: {
+      fontFamily: 'J&J CircularTT Black Web',
+      fontSize: 40,
+      color: "#212121"
+    },
+    h3: {
+      fontFamily: 'J&J CircularTT Black Web',
+      fontSize: 28,
+      color: "#212121"
     }
   },
   shape: {
@@ -41,7 +52,9 @@ const theme = createMuiTheme({
   overrides: {
     MuiTypography: {
       h1: {
-        fontFamily: 'J&J CircularTT Black Web'
+        fontFamily: 'J&J CircularTT Black Web',
+        fontSize: 60,
+        color: "#212121"
       }
     },
     MuiButton: {
@@ -67,10 +80,16 @@ export default function UXPinWrapper({ children }) {
   // roboto.setAttribute('rel', 'stylesheet');
   // document.head.appendChild(roboto);
 
-  // let styles = document.createElement('link');
-  // styles.setAttribute('href', 'https://unpkg.com/carbon-components/css/carbon-components.min.css');
-  // styles.setAttribute('rel', 'stylesheet');
-  // document.head.appendChild(styles);
+  let styles = document.createElement('link');
+  styles.setAttribute('href', '	https://unpkg.com/carbon-components/css/carbon-components.min.css');
+  // styles.setAttribute('type', 'text/css');
+  styles.setAttribute('rel', 'stylesheet');
+  document.head.appendChild(styles);
+
+  let JNJCircular = document.createElement('link');
+  JNJCircular.setAttribute('href', 'src/Fonts/stylesheet.css');
+  JNJCircular.setAttribute('rel', 'stylesheet');
+  document.head.appendChild(JNJCircular);
 
   return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
 }
