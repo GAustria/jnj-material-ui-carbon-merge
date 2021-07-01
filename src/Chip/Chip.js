@@ -6,7 +6,7 @@ import ChipM from "@material-ui/core/Chip";
 const styles = {
   root: {
     background: 'white',
-    border: 1,
+    border: '1px solid',
     borderColor: '#212121',
     borderRadius: 0,
     color: '#212121'
