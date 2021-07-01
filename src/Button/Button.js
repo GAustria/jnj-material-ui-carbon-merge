@@ -6,11 +6,11 @@ import color from "@material-ui/core/colors/amber";
 
 const styles = {
   root: {
-    background: 'white',
+    background: '#ca0018',
     border: 1,
-    borderColor: '#ca0018',
+    borderColor: 'white',
     borderRadius: 0,
-    color: '#ca0018'
+    color: 'white'
   },
 };
 
