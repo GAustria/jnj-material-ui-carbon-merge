@@ -1,4 +1,4 @@
-# Material UI + UXPin Merge
+# Material UI + IBM Carbon + UXPin Merge
 Integration of [Material UI](https://material-ui.com/) with UXPin Merge Technology.
 
 ![alt text](https://github.com/uxpin-merge/material-ui-merge/blob/master/img/header.png "RMWC in UXPin")
