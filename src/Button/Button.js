@@ -1,10 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withStyles } from '@material-ui/core/styles';
 import ButtonM from "@material-ui/core/Button";
+import color from "@material-ui/core/colors/amber";
+
+const styles = {
+  root: {
+    background: 'white',
+    border: 1,
+    borderColor: '#ca0018',
+    borderRadius: 0,
+    color: '#ca0018'
+  },
+};
 
 function Button(props) {
+  const { classes } = props;
   return (
-    <ButtonM {...props} onClick={props.onClick}>
+    <ButtonM className={classes.root} {...props} onClick={props.onClick}>
       {props.children}
     </ButtonM>
   );
@@ -82,4 +95,6 @@ Button.propTypes = {
   ])
 };
 
-export { Button as default };
+// export { Button as default };
+
+export default withStyles(styles)(Button);

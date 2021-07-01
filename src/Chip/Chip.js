@@ -1,9 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withStyles } from '@material-ui/core/styles';
 import ChipM from "@material-ui/core/Chip";
 
+const styles = {
+  root: {
+    background: 'white',
+    border: 1,
+    borderColor: '#212121',
+    borderRadius: 0,
+    color: '#212121'
+  },
+};
+
+
 function Chip(props) {
-  return <ChipM {...props} />;
+  const { classes } = props;
+  return <ChipM className={classes.root} {...props} />;
 }
 
 Chip.propTypes = {
@@ -75,4 +88,6 @@ Chip.propTypes = {
   variant: PropTypes.oneOf(["default", "outlined"])
 };
 
-export { Chip as default };
+// export { Chip as default };
+
+export default withStyles(styles)(Chip);

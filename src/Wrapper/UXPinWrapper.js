@@ -25,7 +25,7 @@ import blueGrey from "@material-ui/core/colors/blueGrey";
 const theme = createMuiTheme({
   palette: {
     primary: { main: "#CA0018" }, 
-    secondary: { main: "#FFFFFF"}, 
+    secondary: { main: "#000099" }, 
   },
   typography: { 
     fontFamily: [ 'J&J CircularTT Black Italic Web', 'J&J CircularTT Bold Web', 'J&J CircularTT Bold Italic Web', 'J&J CircularTT Book Web', 'J&J CircularTT Book Italic Web', 'J&J CircularTT Light Web', 'J&J CircularTT Light Italic Web', 'J&J CircularTT Medium Web', 'J&J CircularTT Medium Italic Web', 'J&J CircularTT Black Web' ].join(','),
@@ -55,15 +55,6 @@ const theme = createMuiTheme({
         fontFamily: 'J&J CircularTT Black Web',
         fontSize: 60,
         color: "#212121"
-      }
-    },
-    MuiButton: {
-      root: {
-        border: {
-          color: "#CA0018"
-        },
-        color: "#CA0018",
-        outlined: "#CA0018"
       }
     }
   }
