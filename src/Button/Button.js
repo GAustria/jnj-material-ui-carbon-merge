@@ -10,7 +10,12 @@ const styles = {
     border: '1px solid',
     borderColor: 'white',
     borderRadius: 0,
-    color: 'white'
+    color: 'white',
+    '&:hover': {
+      backgroundColor: 'white',
+      color: '#ca0018',
+      borderColor: '#ca0018'
+    }
   },
 };
 
