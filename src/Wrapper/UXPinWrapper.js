@@ -19,8 +19,8 @@ import deepOrange from "@material-ui/core/colors/deepOrange";
 import brown from "@material-ui/core/colors/brown";
 import grey from "@material-ui/core/colors/grey";
 import blueGrey from "@material-ui/core/colors/blueGrey";
-import "../styles/carbon-components.css"
-import '../Fonts/stylesheet.css'
+// import "../styles/carbon-components.css"
+// import '../Fonts/stylesheet.css'
 
 const theme = createMuiTheme({
   palette: {
@@ -70,10 +70,10 @@ const theme = createMuiTheme({
 });
 
 export default function UXPinWrapper({ children }) {
-  // let icons = document.createElement('link');
-  // icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
-  // icons.setAttribute('rel', 'stylesheet');
-  // document.head.appendChild(icons);
+  let icons = document.createElement('link');
+  icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
+  icons.setAttribute('rel', 'stylesheet');
+  document.head.appendChild(icons);
 
   // let roboto = document.createElement('link');
   // roboto.setAttribute('href', 'https://fonts.googleapis.com/css?family=Roboto:300,400,500');
