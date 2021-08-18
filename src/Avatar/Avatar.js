@@ -20,6 +20,7 @@ import brown from "@material-ui/core/colors/brown";
 import grey from "@material-ui/core/colors/grey";
 import blueGrey from "@material-ui/core/colors/blueGrey";
 import AvatarM from "@material-ui/core/Avatar";
+import Draggable from 'react-draggable';
 
 function colorSelector(shade, hue) {
   if(hue !== undefined) {
@@ -77,6 +78,7 @@ function colorSelector(shade, hue) {
 
 function Avatar(props) {
   return (
+    // <Draggable>
     <AvatarM
       {...props}
       style={{
@@ -89,6 +91,7 @@ function Avatar(props) {
     >
       {props.children}
     </AvatarM>
+    // </Draggable>
   );
 }
 

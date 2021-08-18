@@ -56,8 +56,36 @@ const theme = createMuiTheme({
         fontSize: 60,
         color: "#212121"
       }
+    },
+    MuiButton:{
+      sizeSmall: {
+        width: 96,
+        height: 30,
+        fontSize: 14
+      },
+      sizeLarge: {
+        width: 150,
+        height: 48,
+        fontSize: 14
+      },
+      sizeMedium: {
+        width: 110,
+        height: 42,
+        fontSize: 14
+      }
     }
-  }
+  },
+  breakpoints: {
+    values: {
+      desktoplg: 1920,
+      desktopmd: 1440,
+      desktopsm: 1280,
+      tabletportrait: 732,
+      tabletlandscape: 1020,
+      mobileportrait: 360,
+      mobilelandscape: 732
+    },
+  },
 });
 
 export default function UXPinWrapper({ children }) {

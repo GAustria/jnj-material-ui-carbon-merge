@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from '@material-ui/core/styles';
 import ChipM from "@material-ui/core/Chip";
+import Draggable from 'react-draggable';
 
 const styles = {
   root: {
@@ -16,7 +17,7 @@ const styles = {
 
 function Chip(props) {
   const { classes } = props;
-  return <ChipM className={classes.root} {...props} />;
+  return <Draggable><ChipM className={classes.root} {...props} /></Draggable>;
 }
 
 Chip.propTypes = {

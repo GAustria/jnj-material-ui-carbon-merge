@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import CardM from "@material-ui/core/Card";
+import Zoom from 'react-reveal/Zoom';
 
 function Card(props) {
   return (
+    <Zoom left>
     <CardM {...props}>
       {props.children}
     </CardM>
+    </Zoom>
   );
 }
 

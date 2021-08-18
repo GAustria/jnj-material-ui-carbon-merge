@@ -113,7 +113,8 @@ module.exports = {
         name: "New",
         include: [
           "src/FileUpload/FileUpload.js",
-          "src/ButtonC/ButtonC.js"
+          "src/ButtonC/ButtonC.js",
+          "src/Draggable/Draggable.js"
         ]
       }
     ],

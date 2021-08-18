@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { withStyles } from '@material-ui/core/styles';
 import ButtonM from "@material-ui/core/Button";
 import color from "@material-ui/core/colors/amber";
+import Draggable from 'react-draggable';
+import Zoom from 'react-reveal/Zoom';
 
 const styles = {
   root: {
@@ -21,10 +23,17 @@ const styles = {
 
 function Button(props) {
   const { classes } = props;
+
   return (
-    <ButtonM className={classes.root} {...props} onClick={props.onClick}>
-      {props.children}
-    </ButtonM>
+    <Zoom left>
+    <Draggable>
+      
+      <ButtonM className={classes.root} {...props} onClick={props.onClick}>
+        {props.children}
+      </ButtonM>
+      
+    </Draggable>
+    </Zoom>
   );
 }
 
